@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/percolator-io/percolator_categories.png)](https://travis-ci.org/percolator-io/percolator_categories)
+
 # PercolatorCategories
 
 TODO: Write a gem description
