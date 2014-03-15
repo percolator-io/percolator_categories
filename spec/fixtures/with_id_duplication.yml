@@ -1,0 +1,8 @@
+---
+- id: some_id
+  name: Name
+  query: name
+  subcategories:
+    - id: some_id
+      name: Sub
+      query: sub
