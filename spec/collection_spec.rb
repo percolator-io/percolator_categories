@@ -36,4 +36,13 @@ describe PercolatorCategories::Collection do
       expect { collection }.to raise_error(PercolatorCategories::Collection::DuplicateIdError)
     end
   end
+
+  context 'with invalid id' do
+    let(:file_path) { fixture_path('with_invalid_id.yml') }
+    let(:collection) { PercolatorCategories::Collection.from_yaml_file(file_path) }
+
+    it 'raise error' do
+      expect { collection }.to raise_error(PercolatorCategories::Collection::InvalidCategoryError)
+    end
+  end
 end
