@@ -20,9 +20,14 @@ module PercolatorCategories
     end
 
     class << self
+      #TODO: fix me
       def from_yaml_file(file)
         content = File.open file
-        raw = YAML.load content
+        from_yaml content
+      end
+
+      def from_yaml(yaml)
+        raw = YAML.load yaml
 
         collection = new
         raw.each do |attrs|
